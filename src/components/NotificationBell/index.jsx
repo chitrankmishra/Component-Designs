@@ -1,20 +1,20 @@
 import React from "react";
 
-import { Component, ComponentTitle, RootContainer } from "../Styles";
+import { ComponentContainer, ComponentTitle, RootContainer } from "../Styles";
 
-import "./index.css";
+import { Icon, IconContainer } from "./style";
 
-const NotificationBell = () => {
+const Component = () => {
 	return (
 		<RootContainer>
 			<ComponentTitle>Notification Bell</ComponentTitle>
-			<Component>
-                <div className="icon-wrapper" data-number="1">
-                    <i className="fa-solid fa-bell bell-icon"></i>
-                </div>
-            </Component>
+			<ComponentContainer>
+                <IconContainer data-number="1">
+                    <Icon className="fa-solid fa-bell"></Icon>
+                </IconContainer>
+            </ComponentContainer>
 		</RootContainer>
 	);
 };
 
-export default NotificationBell;
+export default Component;

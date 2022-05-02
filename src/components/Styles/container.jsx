@@ -31,9 +31,9 @@ export const Container = styled.div`
 	flex: 1;
 	margin: 0 1rem;
 	padding: 0;
-	background-color: ${Theme.container};
 	overflow: auto;
 	overflow-y: overlay;
+    scroll-behavior: smooth;
 	scrollbar-width: thin;
 	scrollbar-color: ${Theme.scrollThumb} ${Theme.scrollTrack};
 	&::-webkit-scrollbar {
@@ -52,9 +52,9 @@ export const Container = styled.div`
 
 export const RootContainer = styled(Container)`
 	padding: 0rem;
-    margin: 1.5rem;
-	background-color: ${Theme.root};
-    border-radius: 5px;
+    margin:-4rem 2rem 0 2rem;
+	background: ${Theme.root};
+    border-radius: 5px 5px 0 0;
     box-shadow: 0px 0px 10px 2px ${Theme.shadow};
     overflow: auto;
 `;

@@ -18,16 +18,17 @@ export const Colors = {
 };
 
 export const Theme = {
+    ...Colors,
 	app: Colors.white,
-	body: Colors.lightWhite,
-	root: Colors.lightYellow,
+	body: Colors.white,
+	root: Colors.creamWhite,
 	container: Colors.lightWhite,
 	scrollThumb: Colors.teal,
 	scrollTrack: Colors.lightGrey,
 	shadow: Colors.darkGrey,
 	disabled: Colors.mediumGrey,
-	primary: Colors.darkYellow,
-	secondary: Colors.greenishBrown,
+	primary: Colors.mediumGrey,
+	secondary: Colors.darkGrey,
     highlight: Colors.brown,
     lightText: Colors.white,
     darkText: Colors.black,

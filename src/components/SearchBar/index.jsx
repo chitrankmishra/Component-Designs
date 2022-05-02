@@ -1,23 +1,24 @@
 import React from "react";
 
-import { Component, ComponentTitle, RootContainer } from "../Styles";
+import { ComponentContainer, ComponentTitle, RootContainer } from "../Styles";
 
-import "./index.css";
+import { SearchBar, SearchIcon, SearchInput } from "./style";
 
-const SearchBar = () => {
+const Component = () => {
 	return (
 		<RootContainer>
 			<ComponentTitle>Search Bar</ComponentTitle>
-			<Component>
-				<div className="search-bar">
-					<input type="text" placeholder="Search" />
-					<a href="#" className="icon">
+            
+			<ComponentContainer>
+				<SearchBar>
+					<SearchInput type="text" placeholder="Search" />
+					<SearchIcon href="#">
 						<i className="fa fa-search"></i>
-					</a>
-				</div>
-			</Component>
+					</SearchIcon>
+				</SearchBar>
+			</ComponentContainer>
 		</RootContainer>
 	);
 };
 
-export default SearchBar;
+export default Component;
